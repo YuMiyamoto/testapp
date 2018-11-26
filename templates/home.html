@@ -9,8 +9,7 @@
     <p class="lead">A Newspaper website built with Django.</p>
     <p class="lead"><a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">View All Articles</a></p>
 </div>
-
-<!--
+<div>
 {% if user.is_authenticated %}
     Hi {{ user.username }}!
     <p><a href="{% url 'logout' %}">logout</a></p>
@@ -21,6 +20,5 @@
     <a href="{% url 'login' %}">login</a>|
     <a href="{% url 'signup' %}">signup</a>
 {% endif %}
--->
-
+</div>
 {% endblock %}
